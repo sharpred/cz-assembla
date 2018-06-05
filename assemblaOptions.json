@@ -1,0 +1,16 @@
+{
+    "types": {
+        "update": {
+            "description": "Add a comment to the ticket",
+            "title": "Update"
+        },
+        "test": {
+            "description": "Mark the ticket ready for testing",
+            "title": "Test"
+        },
+        "fix": {
+            "description": "Mark the ticket as fixed",
+            "title": "Fix"
+        }
+    }
+}
