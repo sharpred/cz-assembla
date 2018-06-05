@@ -53,7 +53,7 @@ module.exports = function (options) {
                 if(answers.assemblaTicketReference && answers.action) {
                     assemblaUpdate = `${answers.action} #${answers.assemblaTicketReference}`;
                 }
-                var msg = (answers.type + ': ' + assemblaUpdate +' ' + answers.subject.trim()).slice(0, 100);
+                var msg = (assemblaUpdate +' : ' + answers.type + ': ' + answers.subject.trim()).slice(0, 100);
                 commit(msg);
             });
         }
