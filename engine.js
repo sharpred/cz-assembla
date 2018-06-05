@@ -29,7 +29,7 @@ module.exports = function (options) {
             cz.prompt([{
                 type: 'list',
                 name: 'type',
-                message: 'Select the type of change that you\'re committing:',
+                message: 'Select the type of change that you\'re committing:\n',
                 choices: choices
             }, {
                 type: 'input',
@@ -38,7 +38,7 @@ module.exports = function (options) {
             }, {
                 type: 'input',
                 name: 'assemblaTicketReference',
-                message: 'add an Assembla ticket reference if known, (without the hash symbol)'
+                message: 'add an Assembla ticket reference if known, (without the hash symbol)\n'
             }, {
                 type: 'list',
                 name: 'action',
