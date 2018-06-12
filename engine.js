@@ -51,9 +51,9 @@ module.exports = function (options) {
                 var maxLineWidth = 100;
                 var assemblaUpdate='';
                 if(answers.assemblaTicketReference && answers.action) {
-                    assemblaUpdate = `${answers.action} #${answers.assemblaTicketReference}`;
+                    assemblaUpdate = `${answers.action} #${answers.assemblaTicketReference} : `;
                 }
-                var msg = (assemblaUpdate +' : ' + answers.type + ': ' + answers.subject.trim()).slice(0, 100);
+                var msg = (assemblaUpdate + answers.type + ': ' + answers.subject.trim()).slice(0, 100);
                 commit(msg);
             });
         }
